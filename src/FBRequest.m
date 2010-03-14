@@ -14,8 +14,8 @@
  * limitations under the License.
 */
 
-#import "FBConnect/FBRequest.h"
-#import "FBConnect/FBSession.h"
+#import "FBRequest.h"
+#import "FBSession.h"
 #import "FBXMLHandler.h"
 #import <CommonCrypto/CommonDigest.h>
 
@@ -41,7 +41,7 @@ static const NSTimeInterval kTimeoutInterval = 180.0;
             userInfo  = _userInfo,
             timestamp = _timestamp;
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////R////////////////////////////////////////////////////////////////////
 // class public
 
 + (FBRequest*)request {
@@ -152,8 +152,15 @@ static const NSTimeInterval kTimeoutInterval = 180.0;
   }
 
   if (_dataParam != nil) {
+#if TARGET_OS_IPHONE
     if ([_dataParam isKindOfClass:[UIImage class]]) {
-      NSData* imageData = UIImagePNGRepresentation((UIImage*)_dataParam);
+		NSData* imageData = UIImagePNGRepresentation((UIImage*)_dataParam);
+#elif TARGET_OS_MAC
+	if ([_dataParam isKindOfClass:[NSImage class]]) {
+		NSData* imageData = [NSBitmapImageRep representationOfImageRepsInArray:[(NSImage *)_dataParam representations]
+																	 usingType:NSPNGFileType
+																	properties:nil];
+#endif
       [self utfAppendBody:body
                      data:[NSString stringWithFormat:@"Content-Disposition: form-data; filename=\"photo\"\r\n"]];
       [self utfAppendBody:body
@@ -242,7 +249,7 @@ static const NSTimeInterval kTimeoutInterval = 180.0;
   }
   
   _timestamp = [[NSDate date] retain];
-  _connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+  _connection = [[NSURLConnection alloc] initWithRequest:request delegate:[self retain]];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -328,6 +335,10 @@ static const NSTimeInterval kTimeoutInterval = 180.0;
 }
 
 - (void)call:(NSString*)method params:(NSDictionary*)params dataParam:(NSData*)dataParam {
+	if(!_session){
+		return;
+	}
+	
   _url = [[self urlForMethod:method] retain];
   _method = [method copy];
   _params = params

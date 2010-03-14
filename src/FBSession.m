@@ -14,8 +14,8 @@
  * limitations under the License.
 */
 
-#import "FBConnect/FBSession.h"
-#import "FBConnect/FBRequest.h"
+#import "FBSession.h"
+#import "FBRequest.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // global
@@ -51,7 +51,9 @@ static FBSession* sharedSession = nil;
     delegate:(id<FBSessionDelegate>)delegate {
   FBSession* session = [[[FBSession alloc] initWithKey:key secret:secret
     getSessionProxy:nil] autorelease];
+	if(delegate){
   [session.delegates addObject:delegate];
+	}
   return session;
 }
 

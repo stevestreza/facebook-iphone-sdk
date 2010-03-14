@@ -19,6 +19,16 @@
 		1EBD01AE1119373800E39B32 /* FBStreamDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C762B51084A07A00FB5EE0 /* FBStreamDialog.m */; };
 		1EBD01AF1119375F00E39B32 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */; };
 		1EBD01B01119375F00E39B32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		1ED9FB95114CCADA001561D2 /* FBConnectUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ED9FB94114CCADA001561D2 /* FBConnectUI.h */; };
+		1ED9FBA1114CCB46001561D2 /* FBConnectGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF5FCAC0E04527C001C6819 /* FBConnectGlobal.m */; };
+		1ED9FBA2114CCB46001561D2 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE61A86E0DE25D0D00D4F7B9 /* FBRequest.m */; };
+		1ED9FBA3114CCB46001561D2 /* FBSession.m in Sources */ = {isa = PBXBuildFile; fileRef = BE61A8700DE25D0D00D4F7B9 /* FBSession.m */; };
+		1ED9FBA4114CCB46001561D2 /* FBXMLHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BECB0ADC0F56C8930037C6F1 /* FBXMLHandler.m */; };
+		1ED9FBA5114CCB4C001561D2 /* FBConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF7092F0EA02F1700EFA6FD /* FBConnect.h */; };
+		1ED9FBA6114CCB4C001561D2 /* FBConnectGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF709300EA02F1700EFA6FD /* FBConnectGlobal.h */; };
+		1ED9FBA7114CCB4C001561D2 /* FBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF709320EA02F1700EFA6FD /* FBRequest.h */; };
+		1ED9FBA8114CCB4C001561D2 /* FBSession.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF709340EA02F1700EFA6FD /* FBSession.h */; };
+		1ED9FBA9114CCB4C001561D2 /* FBXMLHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BECB0ADB0F56C8930037C6F1 /* FBXMLHandler.h */; };
 		BE61A71F0DE2551F00D4F7B9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6E1AB20DB55AE3004C500D /* CoreLocation.framework */; };
 		BE61A7200DE2551F00D4F7B9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9C43530DAC9531001CE972 /* Security.framework */; };
 		BE61A7210DE2551F00D4F7B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */; };
@@ -42,7 +52,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BE61A71A0DE2551300D4F7B9 /* FBPlatform-iPhone */;
+			remoteGlobalIDString = BE61A71A0DE2551300D4F7B9;
 			remoteInfo = "FBPlatform-iPhone";
 		};
 /* End PBXContainerItemProxy section */
@@ -51,7 +61,9 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		1EBD019E111936DD00E39B32 /* libFBPlatformIPhoneUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFBPlatformIPhoneUI.a; path = build/Debug/libFBPlatformIPhoneUI.a; sourceTree = "<group>"; };
+		1EBD019E111936DD00E39B32 /* libFBPlatformIPhoneUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFBPlatformIPhoneUI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ED9FB94114CCADA001561D2 /* FBConnectUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnectUI.h; sourceTree = "<group>"; };
+		1ED9FB9E114CCB34001561D2 /* libFBPlatformMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFBPlatformMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C762B51084A07A00FB5EE0 /* FBStreamDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBStreamDialog.m; sourceTree = "<group>"; };
 		84C762B71084A08800FB5EE0 /* FBStreamDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBStreamDialog.h; path = FBConnect/FBStreamDialog.h; sourceTree = "<group>"; };
 		BE61A71B0DE2551300D4F7B9 /* libFBPlatformIPhone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFBPlatformIPhone.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +101,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1ED9FB9C114CCB34001561D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE61A7190DE2551300D4F7B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -111,6 +130,7 @@
 			children = (
 				BE61A71B0DE2551300D4F7B9 /* libFBPlatformIPhone.a */,
 				1EBD019E111936DD00E39B32 /* libFBPlatformIPhoneUI.a */,
+				1ED9FB9E114CCB34001561D2 /* libFBPlatformMac.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				BEF7092F0EA02F1700EFA6FD /* FBConnect.h */,
+				1ED9FB94114CCADA001561D2 /* FBConnectUI.h */,
 				BEF709300EA02F1700EFA6FD /* FBConnectGlobal.h */,
 				BEF5FCAC0E04527C001C6819 /* FBConnectGlobal.m */,
 				BEF709340EA02F1700EFA6FD /* FBSession.h */,
@@ -178,6 +199,19 @@
 				1EBD01A71119371900E39B32 /* FBLoginDialog.h in Headers */,
 				1EBD01A81119371900E39B32 /* FBPermissionDialog.h in Headers */,
 				1EBD01A91119371900E39B32 /* FBStreamDialog.h in Headers */,
+				1ED9FB95114CCADA001561D2 /* FBConnectUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED9FB9A114CCB34001561D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED9FBA5114CCB4C001561D2 /* FBConnect.h in Headers */,
+				1ED9FBA6114CCB4C001561D2 /* FBConnectGlobal.h in Headers */,
+				1ED9FBA7114CCB4C001561D2 /* FBRequest.h in Headers */,
+				1ED9FBA8114CCB4C001561D2 /* FBSession.h in Headers */,
+				1ED9FBA9114CCB4C001561D2 /* FBXMLHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +248,23 @@
 			productReference = 1EBD019E111936DD00E39B32 /* libFBPlatformIPhoneUI.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1ED9FB9D114CCB34001561D2 /* FBPlatform-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ED9FBAF114CCB6A001561D2 /* Build configuration list for PBXNativeTarget "FBPlatform-Mac" */;
+			buildPhases = (
+				1ED9FB9A114CCB34001561D2 /* Headers */,
+				1ED9FB9B114CCB34001561D2 /* Sources */,
+				1ED9FB9C114CCB34001561D2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FBPlatform-Mac";
+			productName = FBPlatformMac;
+			productReference = 1ED9FB9E114CCB34001561D2 /* libFBPlatformMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		BE61A71A0DE2551300D4F7B9 /* FBPlatform-iPhone */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE61A7470DE2553700D4F7B9 /* Build configuration list for PBXNativeTarget "FBPlatform-iPhone" */;
@@ -245,6 +296,7 @@
 			targets = (
 				BE61A71A0DE2551300D4F7B9 /* FBPlatform-iPhone */,
 				1EBD019D111936DD00E39B32 /* FBPlatform-IPhoneUI */,
+				1ED9FB9D114CCB34001561D2 /* FBPlatform-Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -259,6 +311,17 @@
 				1EBD01AC1119373800E39B32 /* FBLoginDialog.m in Sources */,
 				1EBD01AD1119373800E39B32 /* FBPermissionDialog.m in Sources */,
 				1EBD01AE1119373800E39B32 /* FBStreamDialog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED9FB9B114CCB34001561D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED9FBA1114CCB46001561D2 /* FBConnectGlobal.m in Sources */,
+				1ED9FBA2114CCB46001561D2 /* FBRequest.m in Sources */,
+				1ED9FBA3114CCB46001561D2 /* FBSession.m in Sources */,
+				1ED9FBA4114CCB46001561D2 /* FBXMLHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +368,54 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = FBPlatformIPhoneUI;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1ED9FB9F114CCB35001561D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FBPlatformMac;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1ED9FBA0114CCB35001561D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FBPlatformMac;
+				SDKROOT = macosx10.6;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -406,6 +517,15 @@
 			buildConfigurations = (
 				1EBD019F111936DD00E39B32 /* Debug */,
 				1EBD01A0111936DD00E39B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ED9FBAF114CCB6A001561D2 /* Build configuration list for PBXNativeTarget "FBPlatform-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ED9FB9F114CCB35001561D2 /* Debug */,
+				1ED9FBA0114CCB35001561D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
