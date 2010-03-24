@@ -24,11 +24,11 @@
 		1ED9FBA2114CCB46001561D2 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE61A86E0DE25D0D00D4F7B9 /* FBRequest.m */; };
 		1ED9FBA3114CCB46001561D2 /* FBSession.m in Sources */ = {isa = PBXBuildFile; fileRef = BE61A8700DE25D0D00D4F7B9 /* FBSession.m */; };
 		1ED9FBA4114CCB46001561D2 /* FBXMLHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BECB0ADC0F56C8930037C6F1 /* FBXMLHandler.m */; };
-		1ED9FBA5114CCB4C001561D2 /* FBConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF7092F0EA02F1700EFA6FD /* FBConnect.h */; };
-		1ED9FBA6114CCB4C001561D2 /* FBConnectGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF709300EA02F1700EFA6FD /* FBConnectGlobal.h */; };
-		1ED9FBA7114CCB4C001561D2 /* FBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF709320EA02F1700EFA6FD /* FBRequest.h */; };
-		1ED9FBA8114CCB4C001561D2 /* FBSession.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF709340EA02F1700EFA6FD /* FBSession.h */; };
-		1ED9FBA9114CCB4C001561D2 /* FBXMLHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BECB0ADB0F56C8930037C6F1 /* FBXMLHandler.h */; };
+		1ED9FBA5114CCB4C001561D2 /* FBConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF7092F0EA02F1700EFA6FD /* FBConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ED9FBA6114CCB4C001561D2 /* FBConnectGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF709300EA02F1700EFA6FD /* FBConnectGlobal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ED9FBA7114CCB4C001561D2 /* FBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF709320EA02F1700EFA6FD /* FBRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ED9FBA8114CCB4C001561D2 /* FBSession.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF709340EA02F1700EFA6FD /* FBSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ED9FBA9114CCB4C001561D2 /* FBXMLHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BECB0ADB0F56C8930037C6F1 /* FBXMLHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE61A71F0DE2551F00D4F7B9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6E1AB20DB55AE3004C500D /* CoreLocation.framework */; };
 		BE61A7200DE2551F00D4F7B9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9C43530DAC9531001CE972 /* Security.framework */; };
 		BE61A7210DE2551F00D4F7B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */; };
@@ -376,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -400,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
